@@ -82,7 +82,11 @@
             }
         },
         "tasksController": {
-            "prototype": "montage/core/range-controller"
+            "prototype": "montage/core/range-controller",
+            "properties": {
+                "content": [],
+                "organizedContent": []
+            }
         },
         "title": {
             "prototype": "digit/ui/title.reel",
@@ -90,20 +94,12 @@
                 "element": {"#": "title"},
                 "value": "Choses à faire"
             }
-        },
-        "title2": {
-            "prototype": "digit/ui/title.reel",
-            "properties": {
-                "element": {"#": "title2"},
-                "value": "Title"
-            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <h1 data-montage-id="title2"></h1>
         <h1 data-montage-id="title"></h1>
         <button data-montage-id="addTaskButton">
 
